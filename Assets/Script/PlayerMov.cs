@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerMov : MonoBehaviour
 {
     public float movespeed = 5f;
-    public Animator animation;
+    public Animator PlayerAnimator;
     public GameObject bullet;
     public Transform bulletOut;
     public float max = 4f;
@@ -25,7 +25,7 @@ public class PlayerMov : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            animation.CrossFade("root|Run_Shooter", 0f, -1, 0f);
+            PlayerAnimator.CrossFade("root|Run_Shooter", 0f, -1, 0f);
             GameObject NewBullet = Instantiate(bullet, bulletOut.position, Quaternion.identity);
             Destroy(NewBullet, 1.8f);
         }
