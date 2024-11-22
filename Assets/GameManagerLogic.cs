@@ -9,6 +9,7 @@ public class GameManagerLogic : MonoBehaviour
     public float max = 2f;
 
     public bool GameOver = false;
+
     void Start()
     {
         
@@ -24,12 +25,11 @@ public class GameManagerLogic : MonoBehaviour
             {
                 currentInterval = 0;
                 Vector3 spawnPoint = Vector3.zero;
-                Quaternion rotation = Quaternion.Euler(0,-90,0);
+                Quaternion rotation = Quaternion.Euler(0, -90, 0);
                 spawnPoint.z = Random.Range(max, -max);
                 EnemyLogic NewEnemy = Instantiate(enemyPrefab, spawnPoint, rotation);
                 //NewEnemy.gameManagerLogic = this;
             }
-        
         }
     }
 }

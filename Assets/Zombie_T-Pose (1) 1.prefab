@@ -342,7 +342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d00fe75b1d63a4c48b60c5ac18401915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 5
+  movespeed: 7
   maxHealth: 100
   healthBarImage: {fileID: 759223429812714855}
 --- !u!1 &1827122478799901556

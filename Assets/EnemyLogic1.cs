@@ -36,7 +36,7 @@ public class EnemyLogic : MonoBehaviour
         {
             Destroy(gameObject);
             collision.gameObject.GetComponentInParent<PlayerHealth>().TakeDamage(1);
-            
+
             //gameManagerLogic.GameOver = true;
             //gameManagerLogic.ui.gameObject.SetActive(true);
         }
@@ -50,7 +50,7 @@ public class EnemyLogic : MonoBehaviour
 
         if (healthBarImage != null)
         {
-           healthBarImage.fillAmount = currentHealth/maxHealth;
+            healthBarImage.fillAmount = currentHealth / maxHealth;
         }
 
         if (currentHealth <= 0)
