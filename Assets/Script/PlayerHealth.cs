@@ -4,7 +4,13 @@ public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private float startingHealth;
     public float Currenthealth { get; private set; }
+    //public GameManager gameManager;
 
+    // void Update(){
+    //     if (Currenthealth<= 0){
+    //         Debug.Log("Dead");
+    //     }
+    // }
     private void Awake()
     {
         Currenthealth = startingHealth;
