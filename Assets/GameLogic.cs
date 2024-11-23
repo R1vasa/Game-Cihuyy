@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GameLogic : MonoBehaviour
 {
-    public GameObject gameOverUI;
+    public GameObject gameOvUI;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,6 +15,6 @@ public class GameLogic : MonoBehaviour
         
     }
     public void gameOver(){
-        gameOverUI.SetActive(true);
+        // gameOvUI.SetActive(true);
     }
 }

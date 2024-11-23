@@ -2832,6 +2832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f418b741f1dd8c47987ac82953647e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOvUI: {fileID: 1831711292}
   startingHealth: 3
 --- !u!114 &503858308
 MonoBehaviour:
@@ -2846,7 +2847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movespeed: 7
-  animation: {fileID: 503858310}
+  PlayerAnimator: {fileID: 503858310}
   bullet: {fileID: 1506362523748341266, guid: 4caea339b8b741f4d9e9fa3fbbc25b72, type: 3}
   bulletOut: {fileID: 1825138199}
   max: 4
@@ -6410,7 +6411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc9a64d4662c649cf8ad682ce11e9524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverUI: {fileID: 0}
+  gameOvUI: {fileID: 0}
 --- !u!4 &1231591038
 Transform:
   m_ObjectHideFlags: 0

@@ -25,6 +25,7 @@ public class PlayerMov : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log("SHOOT");
             PlayerAnimator.CrossFade("root|Run_Shooter", 0f, -1, 0f);
             GameObject NewBullet = Instantiate(bullet, bulletOut.position, Quaternion.identity);
             Destroy(NewBullet, 1.8f);

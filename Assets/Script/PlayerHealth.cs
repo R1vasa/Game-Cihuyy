@@ -1,7 +1,9 @@
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
+
 {
+    public GameObject  gameOvUI;
     [SerializeField] private float startingHealth;
     public float Currenthealth { get; private set; }
     //public GameManager gameManager;
@@ -23,6 +25,8 @@ public class PlayerHealth : MonoBehaviour
         if (Currenthealth == 0)
         {
             Destroy(gameObject);
+
+            gameOvUI.SetActive(true);
         }
     }
 
