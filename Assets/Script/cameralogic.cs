@@ -1,13 +1,10 @@
 using UnityEngine;
 
-public class PlayerMov : MonoBehaviour
+public class cameralogic : MonoBehaviour
 {
     public float movespeed = 5f;
-    public Animator PlayerAnimator;
-    public GameObject bullet;
-    public Transform bulletOut;
     public float max = 4f;
-
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
@@ -22,13 +19,5 @@ public class PlayerMov : MonoBehaviour
 
         movement.z= Mathf.Clamp(movement.z, -max, max);
         transform.position = movement;
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("SHOOT");
-            PlayerAnimator.CrossFade("root|Run_Shooter", 0f, -1, 0f);
-            GameObject NewBullet = Instantiate(bullet, bulletOut.position, Quaternion.identity);
-            Destroy(NewBullet, 1.8f);
-        }
     }
 }
